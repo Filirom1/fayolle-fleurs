@@ -94,11 +94,52 @@ Chrome Frame prompt
 Author's custom styles
 ========================================================================== */
 
+html, body {
+  height: 100%;
+}
 
+#main{
+  margin: 0 auto;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  background: #f1f0d5; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #f1f0d5 13%, #f1f0d5 13%, #c2d75b 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(13%,#f1f0d5), color-stop(13%,#f1f0d5), color-stop(100%,#c2d75b)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #f1f0d5 13%,#f1f0d5 13%,#c2d75b 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #f1f0d5 13%,#f1f0d5 13%,#c2d75b 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #f1f0d5 13%,#f1f0d5 13%,#c2d75b 100%); /* IE10+ */
+  background: linear-gradient(135deg, #f1f0d5 13%,#f1f0d5 13%,#c2d75b 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f0d5', endColorstr='#c2d75b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  font-family: 'Josefin Sans', sans-serif;
+}
 
+header {
+  height: 110px;
+}
 
+nav {
+  background-color: #C0D860;
+  font-size: 1.5em;
+}
 
+nav ul{
+  padding-left: 0;
+  text-align: right;
+}
 
+nav li{
+  display: inline-block;
+  padding: 10px;
+  font-weight: 600;
+}
+
+nav li a {
+  color: #584c4e;
+  padding-bottom: 1px;
+  border-bottom: 2px solid #584c4e;
+  text-decoration: none;
+}
 
 
 
@@ -217,7 +258,31 @@ Theses examples override the primary ('mobile first') styles.
 Modify as content requires.
 ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 1024px) {
+  #main {
+    width: 1024px;
+    border-right: 2px solid #c0d860;
+    border-left: 2px solid #c0d860;
+  }
+
+  nav {
+    position: relative;
+    height: 40px;
+  }
+
+  nav ul{
+    padding-left: 0;
+    position: absolute;
+    top: -64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  #content {
+    font-size: 1.1em;
+    padding: 50px;
+  }
   /* Style adjustments for viewports that meet the condition */
 }
 
