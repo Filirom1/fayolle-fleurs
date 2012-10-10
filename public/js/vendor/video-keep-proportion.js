@@ -1,9 +1,9 @@
 $(function(){
   // Find all YouTube videos
-  var $allVideos = $("iframe[src^='http://player.vimeo.com']"),
+  var $allVideos = $("iframe"),
 
       // The element that is fluid width
-      $fluidEl = $("#content");
+      $fluidEl = $allVideos.parent();
 
   // Figure out and save aspect ratio for each video
   $allVideos.each(function() {

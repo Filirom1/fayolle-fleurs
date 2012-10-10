@@ -161,8 +161,6 @@ nav li a {
 
 
 
-
-
 /* ==========================================================================
 Helper classes
 ========================================================================== */
@@ -297,6 +295,14 @@ Modify as content requires.
     // or
     padding: 50px 200px;
   }
+
+  .col-left,
+  .col-right {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+
   /* Style adjustments for viewports that meet the condition */
 }
 
