@@ -1,0 +1,17 @@
+{
+  "name": "fayolle-fleurs",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "./run.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Filirom1/fayolle-fleurs.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "underscore": "~1.4.2"
+  }
+}

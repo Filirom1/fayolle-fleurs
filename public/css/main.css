@@ -98,6 +98,14 @@ html, body {
   height: 100%;
 }
 
+p, pre {
+  text-align: justify;
+}
+
+a {
+  color: #333;
+}
+
 #main{
   margin: 0 auto;
   min-height: 100%;
@@ -124,7 +132,7 @@ header .logo {
   position: absolute;
   top: 5px;
   left: 15px;
-  z-index: 1000;
+  z-index: 1;
 }
 
 nav {
@@ -148,18 +156,71 @@ nav li a {
   padding-bottom: 1px;
   border-bottom: 2px solid #584c4e;
   text-decoration: none;
+  /*position: relative;*/
+
+  -webkit-transition: padding-bottom 0.3s ease-in-out;  /* Safari 3.2+, Chrome */
+     -moz-transition: padding-bottom 0.3s ease-in-out;  /* Firefox 4-15 */
+       -o-transition: padding-bottom 0.3s ease-in-out;  /* Opera 10.5–12.00 */
+          transition: padding-bottom 0.3s ease-in-out;  /* Firefox 16+, Opera 12.50+ */
 }
 
+.accueil_page nav li a[href="/accueil/"],
+.offrir_page nav li a[href="/offrir/"],
+.mariage_page nav li a[href="/mariage/"],
+.deces_page nav li a[href="/deces/"],
+.entreprise_page nav li a[href="/entreprise/"],
+.contact_page nav li a[href="/contact/"] {
+  padding-bottom: 10px;
+}
 
 #content {
   padding: 25px;
 }
 
+iframe {
+  background-color: #fff;
+  background-position:center center;
+  background-image:url(/img/ajax-loader.gif);
+  background-repeat: no-repeat;
+}
 
+.no-js .lazy {
+  display: none;
+}
 
+.section.group {
+  position:relative;
+}
 
+.section.group .col {
+  overflow: hidden;
+}
 
+.section.group .col img{
+  height: 100%;
+  width: 100%;
+}
 
+.img-wrapper.span_3_of_5 {
+  height: 472px;
+}
+
+.img-wrapper.span_2_of_5 {
+  height: 229px;
+}
+
+.img-wrapper.span_1_of_5 {
+  height: 229px;
+}
+
+.img-wrapper img{
+  border: none;
+}
+
+.img-wrapper,
+.img-wrapper img {
+  position: relative;
+}
 
 /* ==========================================================================
 Helper classes

@@ -1,2 +1,6 @@
 public/pages.js
 npm-debug.log
+public/img/appareil-photo/
+public/img/original/
+node_modules/
+*~
