@@ -121,7 +121,6 @@ ff.View = Backbone.View.extend({
     setTimeout(function(){
       self.lazyload();
       self.fixGridFirstColumn();
-      self.resizeImageToParent();
       self.zoombox();
     }, 60);
 
@@ -130,6 +129,7 @@ ff.View = Backbone.View.extend({
 
   lazyload: function(){
     this.$("img.lazy").lazyload({
+      threshold : 200,
       effect : "fadeIn"
     });
   },
@@ -141,10 +141,6 @@ ff.View = Backbone.View.extend({
         $this.addClass('firstChild');
       }
     });
-  },
-
-  resizeImageToParent: function(){
-    this.$('img.lazy').resizeToParent();
   },
 
   zoombox: function(){
