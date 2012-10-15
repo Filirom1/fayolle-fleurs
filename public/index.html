@@ -12,10 +12,24 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/grid.css">
-        <script src="/js/vendor/modernizr-2.6.1.min.js"></script>
+        <link rel="stylesheet" href="/css/normalize.css" data-build="/css/app.css">
+        <link rel="stylesheet" href="/css/main.css" data-build="/css/app.css">
+        <link rel="stylesheet" href="/css/grid.css" data-build="/css/app.css">
+        <link rel="stylesheet" href="/css/zoombox.css" data-build="/css/app.css"/>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script src="/pages.js"  data-build="/app.js"></script>
+        <script src="/js/vendor/underscore.js"  data-build="/app.js"></script>
+        <script src="/js/vendor/backbone.js"  data-build="/app.js"></script>
+        <script src="/js/vendor/jquery.setMode.js"  data-build="/app.js"></script>
+        <script src="/js/vendor/jquery.lazyload.js"  data-build="/app.js"></script>
+        <script src="/js/vendor/jquery.transit.js"  data-build="/app.js"></script>
+        <script src="/js/Backbone.navigate.js"  data-build="/app.js"></script>
+        <script src="/js/main.js"  data-build="/app.js"></script>
+        <script src="/js/iframe-keep-proportion.js"  data-build="/app.js"></script>
+        <script src="/js/vendor/zoombox.js" data-build="/app.js"></script>
+        <script src="/js/vendor/modernizr-2.6.1.min.js" data-build="/app.js"></script>
     </head>
     <body>
         <!-- Add your site or application content here -->
@@ -38,22 +52,6 @@
           </div>
         </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-        <!--<script src="/js/plugins.js"></script>-->
-        <script src="/pages.js"></script>
-        <script src="/js/vendor/underscore.js"></script>
-        <script src="/js/vendor/backbone.js"></script>
-        <script src="/js/vendor/jquery.setMode.js"></script>
-        <script src="/js/vendor/jquery.lazyload.js"></script>
-        <script src="/js/vendor/jquery.transit.js"></script>
-        <script src="/js/Backbone.navigate.js"></script>
-        <script src="/js/main.js"></script>
-        <script src="/js/iframe-keep-proportion.js"></script>
-        <script type="text/javascript" src="/js/vendor/zoombox.js"></script>
-
-        <link href="/css/zoombox.css" rel="stylesheet" type="text/css" media="screen" />
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-2677301-16'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
