@@ -196,11 +196,6 @@ iframe {
   overflow: hidden;
 }
 
-.section.group .col img{
-  height: 100%;
-  width: 100%;
-}
-
 .img-wrapper.span_3_of_5 {
   height: 472px;
 }
