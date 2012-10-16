@@ -348,9 +348,13 @@ Modify as content requires.
   #content {
     font-size: 1.1em;
     padding: 50px;
-    // or
-    padding: 50px 200px;
   }
+
+  .accueil_page #content {
+    padding: 50px 150px;
+  }
+
+
 
   .col-left,
   .col-right {
