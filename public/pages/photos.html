@@ -1,8 +1,7 @@
 <% _.each(images, function(size, url) { %>
 <div class="col span_<%= size %>_of_5 img-wrapper">
   <a class="zoombox zgallery1" href="/img/zoom-720/<%= url %>">
-    <img class="lazy" src="/img/grey.gif" data-original="/img/<%= page %>/<%= url %>" >
+    <img src="/img/<%= page %>/<%= url %>" >
   </a>
-  <noscript><img src="/img/<%= page %>/<%= url %>"></noscript>
 </div>
 <% }); %>

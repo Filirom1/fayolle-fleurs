@@ -119,19 +119,11 @@ ff.View = Backbone.View.extend({
 
     var self = this;
     setTimeout(function(){
-      self.lazyload();
       self.fixGridFirstColumn();
       self.zoombox();
     }, 60);
 
     return this;
-  },
-
-  lazyload: function(){
-    this.$("img.lazy").lazyload({
-      threshold : 200,
-      effect : "fadeIn"
-    });
   },
 
   fixGridFirstColumn: function(){
