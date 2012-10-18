@@ -31,7 +31,6 @@ window.ff.images = {
      "P1000019.jpg" : 2 ,
      "P1000063.jpg" : 2 ,
      "P1000248.jpg" : 2 ,
-     "P1000065.jpg": 1,
   },
   deces : {
      "P1000264.jpg" : 1 ,
@@ -85,6 +84,8 @@ window.ff.images = {
 
 
 $(function(){
+  var $html = $('html');
+  $html.removeClass('no-js');
   var Router = Backbone.Router.extend({
 
     routes: {
@@ -95,7 +96,8 @@ $(function(){
 
     showPage: function(page) {
       page = page || 'accueil';
-      $('html').setMode(page, 'page');
+      if ($html.hasClass(page + '_page')) return;
+      $html.setMode(page, 'page');
       var $content = $('#content').html(new ff.View({page: page}).render().el);
     }
 
