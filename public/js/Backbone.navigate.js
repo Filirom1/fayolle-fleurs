@@ -12,4 +12,4 @@ $(function(){
     ff.router.navigate(href, true);
     return false;
   });
-})
+});
