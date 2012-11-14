@@ -1,9 +1,9 @@
-Backbonist.nodejs
+Fayolle Fleurs
 =================
 
-A nodejs boilerplate that use Backbonist stack
+<http://fayolle-fleurs.fr/>
 
-In devlopment
+Pour du dev
 
     $ node bin/server
     Force browsers to reload when the server detects file changes.
@@ -13,7 +13,7 @@ In devlopment
     Push State Enabled in  /home/romain/Backbonist.nodejs/public
     Server listening on http://127.0.0.1:3000/
 
-In production
+Pour optimiser avant la prod
 
     $ NODE_ENV=production node bin/server
     compile templates
